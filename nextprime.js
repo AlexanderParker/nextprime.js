@@ -12,7 +12,7 @@ console.log(
 )
 
 
-// Find all modulo of "-n" for factors 2..n and return the lowest missing mod value + original input - this is our next prime number
+// Find all modulo of "-n" for factors 2..n and return the lowest missing mod value - this is our next prime number
 function getDistanceToNextPrime(n) {
 	var candidates = []
 
@@ -34,7 +34,7 @@ function getDistanceToNextPrime(n) {
 }
 
 
-// Find all modulo of "n" for factors 2..n/2 and return the lowest missing mod value + original input - this is our previous prime number
+// Find all modulo of "n" for factors 2..n/2 and return the lowest missing mod value - this is our previous prime number
 function getDistanceToPrevPrime(n) {
 	var candidates = []
 		,searchValue = 0n
