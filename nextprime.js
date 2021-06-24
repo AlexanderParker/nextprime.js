@@ -64,25 +64,3 @@ function getDistanceToPrevPrime(n) {
 function trueMod(n, m) {
   return ((n % m) + m) % m;
 }
-
-
-// Non-recursive newtonian square root (no stack overflow and reduced memory usage)
-function sqrt(value) {	
-    if (value < 0n) {
-        throw 'square root of negative numbers is not supported'
-    }
-
-    if (value < 2n) {
-        return value;
-    }
-
-    x0 = 1n
-
-    do {
-    	x1 = ((value / x0) + x0) >> 1n
-    	isRoot = x0 === x1 || x0 === (x1 - 1n)
-    	x0 = x1
-	} while (!isRoot)
-
-    return x0
-}
